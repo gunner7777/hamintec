@@ -1,0 +1,16 @@
+.cart__link {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 55px;
+  vertical-align: middle;
+  border-radius: 100%;
+  background-color: #313041;
+  -webkit-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+.cart__link,
+.cart__link:hover,
+.cart__link:focus {
+  color: $white;
+}

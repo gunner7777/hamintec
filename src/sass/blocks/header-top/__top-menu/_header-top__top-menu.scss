@@ -1,0 +1,11 @@
+.header-top__top-menu {
+  padding-left: 30px;
+  @include border-bottom(2px);  
+}
+
+@media all and (max-width: 767px) {
+  .header-top__top-menu {
+    padding-left: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,9 @@
+.popup-currency__item {
+  line-height: 1rem;
+  padding: 5px 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $red;
+  }
+}

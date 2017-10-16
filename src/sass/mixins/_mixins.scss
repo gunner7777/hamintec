@@ -1,0 +1,26 @@
+.parallax {
+  background-image: url("http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brands_bg_img.jpg?686788137492996697");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--footer {
+    background-image: url("http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_footer_bg_img.jpg?686788137492996697");
+  }
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin menu-item-chevron-after {
+  &:after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    font-style: normal;
+    position: absolute;
+    right: 30px;
+  }
+}

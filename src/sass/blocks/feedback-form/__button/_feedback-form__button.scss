@@ -1,0 +1,32 @@
+.feedback-form__button {
+  height: 65px;
+  width: 30%;
+  border-radius: 40px;
+  margin: -3px -5px 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+
+  &:hover {
+    background-color: $white;
+    color: #313041;
+   }
+}
+
+@media all and (max-width: 991px) {
+  .feedback-form__button {
+    width: 20%;
+  }
+}
+
+@media all and (max-width:767px) {
+  .feedback-form__button {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .feedback-form__button {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

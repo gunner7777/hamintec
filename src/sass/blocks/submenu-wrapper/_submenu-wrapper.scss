@@ -1,0 +1,28 @@
+.submenu-wrapper {
+  position: absolute;
+  overflow: hidden;
+  z-index: 3;
+  background-color: $white;
+  opacity: 0;
+  -webkit-transform: translate(-40%, 0);
+      -ms-transform: translate(-40%, 0);
+          transform: translate(-40%, 0);
+  -webkit-transition: opacity .6s ease, max-height .4s ease-out;
+  -o-transition: opacity .6s ease, max-height .4s ease-out;
+  transition: opacity .6s ease, max-height .4s ease-out;
+  padding: 10px 20px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+@media all and (max-width: 991px) {
+  .submenu-wrapper {
+    display: block;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    position: static;
+    opacity: 1;
+    padding: 3px 0 0;
+  }
+}

@@ -1,0 +1,12 @@
+.slider-text__text {
+  opacity: .7;
+  color: $white;
+  margin-top: 30px;
+}
+
+@media all and (max-width: 991px) {
+  .slider-text .slider-text__text {
+    display: none;
+  }
+
+}

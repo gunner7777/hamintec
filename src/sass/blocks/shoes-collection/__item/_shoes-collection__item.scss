@@ -1,0 +1,17 @@
+.shoes-collection__item {
+  position: relative;
+  -webkit-transition: -webkit-box-shadow .3s ease;
+  transition: -webkit-box-shadow .3s ease;
+  -o-transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease, -webkit-box-shadow .3s ease;
+
+  -webkit-transform: translate3d(0,0,0);
+
+          transform: translate3d(0,0,0);
+
+  &:hover {
+    -webkit-box-shadow: 0 10px 40px 15px rgba(0,0,0,.5);
+            box-shadow: 0 10px 40px 15px rgba(0,0,0,.5);
+  }
+}

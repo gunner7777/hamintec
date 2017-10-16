@@ -1,0 +1,31 @@
+.subscribe {
+  height: 250px;
+  padding-top: 5%;
+}
+
+@media all and (max-width: 991px) {
+  .subscribe {
+    padding-top: 3%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .subscribe {
+    height: 290px;
+  }
+}
+
+@media all and (max-width: 323px) {
+  .subscribe {
+    height: 315px;
+  }
+}
+
+@media all and (max-width: 257px) {
+  .subscribe {
+    height: 335px;
+  }
+}
+
+@import './__text/subscribe__text';
+@import './__title/subscribe__title';

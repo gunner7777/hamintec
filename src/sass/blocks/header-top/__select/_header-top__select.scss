@@ -1,0 +1,5 @@
+.header-top__select {
+  position: relative;
+  z-index: 3;
+  @include border-bottom(2px);
+}

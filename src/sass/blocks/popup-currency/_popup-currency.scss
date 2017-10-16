@@ -1,0 +1,10 @@
+.popup-currency {
+  display: none;
+  width: 100%;
+  @include border(2px);
+  @include border-left(1px);
+  background-color: $white;
+}
+
+@import '__item/popup-currency__item';
+@import '__item/popup-currency__item--selected';

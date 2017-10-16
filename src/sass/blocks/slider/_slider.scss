@@ -1,0 +1,10 @@
+.slider {
+  position: relative;
+  height: auto;
+}
+
+@import '__slide/slider__slide';
+@import '__img/slider__img';
+@import '__input/slider__input';
+@import '__controls/slider__controls';
+@import '__label/slider__label';

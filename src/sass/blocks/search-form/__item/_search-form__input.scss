@@ -1,0 +1,16 @@
+.search-form__input {
+  height: 55px;
+  padding: 10px;
+  margin-left: 46px;
+  width: 73%;
+  border: none;
+  font-size: .75rem;
+  background: transparent;
+}
+
+@media all and (max-width: 1199px) {
+  .search-form__input {
+    margin-left: 35px;
+    font-size: .7rem;
+  }
+}

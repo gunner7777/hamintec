@@ -1,0 +1,14 @@
+@media all and (max-width: 991px) {
+  .main-menu__toggle--main {
+    right: 30px;
+    top: 15px;
+    font-size: 1.2rem;
+    background: transparent;
+  }
+}
+
+@media all and (max-width: 260px) {
+  .main-menu__toggle--main {
+    right: 15px;
+  }
+}

@@ -1,0 +1,303 @@
+doctype html
+head
+  meta(
+    name='viewport'
+    content='width=device-width, initial-scale=1.0'
+  )
+  meta(
+    charset="UTF-8"
+  )
+  link(
+    rel="stylesheet"
+    href="css/bootstrap.min.css"
+  )
+  link(
+    rel="stylesheet"
+    href="css/font-awesome.min.css"
+  )
+  link(
+    rel="stylesheet"
+    href="css/style.css"
+  )
+  title Hamintec
+
+body
+  div.wrapper
+    header
+      section.header-top.wrapper__header-top.font-size-s
+        div.container-fluid.no-padding
+          div.row.no-gutters
+
+            div.col-md-9.col-sm-12
+              ul.top-menu.menu.header-top__top-menu.menu__item--display-ib
+                each val in ["my account", "wishlist", "checkout"]
+                  li.menu__item
+                    a.menu__link.top-menu__link.menu__link--color-grey-blue.text-uppercase(href="#")= val
+            
+            div.col-md-2.col-sm-6.col-6
+              ul.socials.header-top__socials.menu.menu--border-l.text-center.menu__item--display-ib
+                li.menu__item
+                  a.menu__link.top-menu__link.menu__link--color-grey-blue(href="#")
+                    i.fa.fa-twitter(aria-hidden="true")
+                li.menu__item
+                  a.menu__link.top-menu__link.menu__link--color-grey-blue(href="#")
+                    i.fa.fa-facebook(aria-hidden="true")
+                li.menu__item
+                  a.menu__link.top-menu__link.menu__link--color-grey-blue(href="#")
+                    i.fa.fa-youtube(aria-hidden="true")
+                li.menu__item
+                  a.menu__link.top-menu__link.menu__link--color-grey-blue(href="#")
+                    i.fa.fa-google-plus(aria-hidden="true")
+
+            div.col-md-1.col-sm-6.col-6
+              div.select.header-top__select.menu--border-l.text-uppercase.text-center
+                span.select__text USD
+                i.fa.fa-chevron-down.select__arrow.select__arrow--color-blue(aria-hidden="true")
+                ul.menu.select__menu.popup-currency
+                  li.menu__item.popup-currency__item.popup-currency__item--selected USD
+                  li.menu__item.popup-currency__item EUR
+                  li.menu__item.popup-currency__item GBR
+      
+      
+
+
+      section.header-center.font-size-m.wrapper__header-top.wrapper__header-center
+        div.container-fluid
+          div.row.align-items-center
+
+            div.col-lg-3.col-sm-6.col-12
+              div.logo
+                a.logo__link(href="#")
+                  img(src="http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/logo.png?237503522928280807" alt="hamintec")/
+
+            div.col-lg-6.col-12.header-center__order--last
+              div
+                h2.main-menu__mobile.font-size-l.text-uppercase Hamintec
+                  i.fa.fa-chevron-down.main-menu__toggle.main-menu__toggle--main
+                ul.main-menu.menu.font-weight-bold.text-center.menu--to-column.menu__item--display-ib
+                    li.menu__item.main-menu__item
+                      a.menu__link.menu__link--color-grey-blue.main-menu__link.text-uppercase(href="#") HOME
+                        i.fa.fa-chevron-down.main-menu__toggle
+                      div.submenu-wrapper.main-menu__submenu-wrapper(data-submenu='HOME')
+                        ul.menu.submenu.menu--size-l
+                          each val in ["BEST SELLERS", "BOYS`", "GIRLS`", "LIFESTYLE COLLECTION", "NEW ARRIVALS", "ATHLETICS", "BADMINTON", "CYCLING"]
+                            li.menu__item.submenu__item
+                              a.menu__link--color-light-grey-blue.text-uppercase(href="#")= val
+                        
+                    li.menu__item.main-menu__item
+                      a.menu__link.menu__link--color-grey-blue.main-menu__link.text-uppercase(href="#") PRODUCTS
+                        i.fa.fa-chevron-down.main-menu__toggle
+                        
+                      div.submenu-wrapper.main-menu__submenu-wrapper(data-submenu='PRODUCTS')
+                        div.row
+                          div.col-lg-6.col-12
+                            div.submenu--level2
+                              h4.submenu__header.menu--size-l FOOTWEAR
+                                i.fa.fa-chevron-down.main-menu__toggle
+                              ul.submenu.submenu--deep.menu--size-m
+                                each val in ["AEROBICS", "ATHLETICS", "BADMINTON", "BEST SELLERS", "BOYS`", "CYCLING", "FITNESS AND EXERCISE", "FOOTBALL", "GIRLS`"]
+                                  li.menu__item.submenu__item
+                                    a.menu__link--color-light-grey-blue(href="#")= val
+                          div.col-lg-6.col-12
+                            div.submenu--level2
+                              h4.submenu__header.menu--size-l SPORTS
+                                i.fa.fa-chevron-down.main-menu__toggle
+                              ul.submenu.submenu--deep.menu--size-m
+                                each val in ["FITNESS AND EXERCISE", "GIRLS`", "FOOTBALL", "LIFESTYLE COLLECTION", "NEW ARRIVALS", "AEROBICS", "ATHLETICS", "BADMINTON"]
+                                  li.menu__item.submenu__item
+                                    a.menu__link--color-light-grey-blue(href="#")= val
+
+                    li.menu__item.main-menu__item
+                      a.menu__link.menu__link--color-grey-blue.main-menu__link.text-uppercase(href="#") BLOG
+                    li.menu__item.main-menu__item
+                      a.menu__link.menu__link--color-grey-blue.main-menu__link.text-uppercase(href="#") SALE
+                    li.menu__item.main-menu__item
+                      a.menu__link.menu__link--color-grey-blue.main-menu__link.text-uppercase(href="#") ABOUT US
+                    li.menu__item.main-menu__item
+                      a.menu__link.menu__link--color-grey-blue.main-menu__link.text-uppercase(href="#") CONTACT US
+
+            div.col-lg-3.col-sm-6.col-12
+              div.header-center__flex
+                div.search-form.search-form--border-radius-true
+                  form(action='#')
+                    input.search-form__input(type="text" placeholder="SEARCH STORE")/
+
+                div.cart.text-center.header-center__cart
+                  a.cart__link(href="#")
+                    i.fa.fa-shopping-basket(aria-hidden="true")
+                  span.cart__quantity 0
+
+    section.slider
+      div.container-fluid
+        div.row.justify-content-center
+          input.slider__input(type="radio" name="point" id="slide1" checked)
+          input.slider__input(type="radio" name="point" id="slide2")
+          input.slider__input(type="radio" name="point" id="slide3")
+          
+          div.slide.slider__slide
+            a(href="#")
+              img.slider__img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/slide1_image.jpg?686788137492996697")
+              
+              div.slider-caption.container
+                div.row.justify-content-around
+                  div.col-6
+                    div.slider-text
+                      h2.slider-text__title.slider-text__title--h2.text-uppercase Nike
+                      h3.slider-text__title.slider-text__title--h3.slider-text__title--blue.text-uppercase Air Force
+                      img.slider-text__img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/slide1_textblock_image.png?686788137492996697")
+                  div.col-6
+                    div.slider-text
+                      h3.slider-text__title.slider-text__title--h3.text-uppercase Air Force 1 Ultra Flyknit
+                      p.slider-text__text The Nike Air Force 1 Ultra Flyknit Men's Shoe weighs 50 percent less than the '82 hoops original thanks to its all-new, ultra-breathable Nike Flyknit upper. Strategically crafted Flyknit panels add dimension while remaining true to the AF1 design aesthetic.
+                      span.slider-text__button.btn.font-size-s More info
+
+          div.slide.slider__slide
+            a(href="#")
+              img.slider__img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/slide4_image.jpg?686788137492996697")
+              
+              div.slider-caption.container
+                div.row.justify-content-around
+                  div.col-6
+                    div.slider-text
+                      h2.slider-text__title.slider-text__title--h2.text-uppercase Adidas
+                      h3.slider-text__title.slider-text__title--h3.slider-text__title--blue.text-uppercase MEN'S Collection
+                      img.slider-text__img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/slide4_textblock_image.png?686788137492996697")
+                  div.col-6
+                    div.slider-text
+                      h3.slider-text__title.slider-text__title--h3.text-uppercase ULTRA BOOST SHOES
+                      p.slider-text__text Less than a week after Kanye showed off his all-white Ultra Boosts to the world, the German brand allows for a more reserved, muted option. Equipped with the brand’s TORSION® SYSTEM and ADIWEAR™ outsole.
+                      span.slider-text__button.btn.font-size-s More info
+
+          div.slide.slider__slide
+            a(href="#")
+              img.slider__img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/slide2_image.jpg?2291416542916596308")
+              
+              div.slider-caption.container
+                div.row.justify-content-around
+                  div.col-6
+                    div.slider-text
+                      h2.slider-text__title.slider-text__title--h2.text-uppercase New Balance
+                      h3.slider-text__title.slider-text__title--h3.slider-text__title--blue.text-uppercase Running Classics
+                      img.slider-text__img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/slide2_textblock_image.png?2291416542916596308")
+                  div.col-6
+                    div.slider-text
+                      h3.slider-text__title.slider-text__title--h3.text-uppercase 878 90’s Running
+                      p.slider-text__text A must for sneaker collectors, the New Balance 878 will add variety to your weekly lineup. ABZORB® cushioning in the midfoot provides exceptional shock absorption Leather/mesh/suede upper.
+                      span.slider-text__button.btn.font-size-s More info
+
+          div.slider__controls
+            label.slider__label(for="slide1")
+            label.slider__label(for="slide2")
+            label.slider__label(for="slide3")
+              
+    section.brands-section.parallax
+      div.container-fluid
+        div.row.justify-content-center
+          div.brands-section__brands
+            div.brands.container
+              each val in ["http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brand1.png?237503522928280807", "http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brand2.png?237503522928280807", "http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brand3.png?237503522928280807", "http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brand4.png?237503522928280807", "http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brand5.png?237503522928280807", "http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/homepage_brand6.png?237503522928280807"]
+                div.brands__item
+                  a(href="#")
+                    img.brands__img(src= val)
+            div
+              a(href="#")
+                span.brands-section__button.slider-text__button.btn.font-size-s view all brands
+
+
+    section.shoes-collection.wrapper__shoes-collection
+        div.shoes-collection__flexbox
+          div.shoes-collection__item
+            a(href="#")
+              img.shoes-collection__img(src="http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/custom_showcase1_img.jpg?237503522928280807")
+              div.shoes-collection__text.text-uppercase
+                h2 Men's<br/>Collection
+                span.shoes-collection__button.brands-section__button.slider-text__button.btn.font-size-s view all
+          
+          div.shoes-collection__item
+            a(href="#")
+              img.shoes-collection__img(src="http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/custom_showcase2_img.jpg?237503522928280807")
+              div.shoes-collection__text.text-uppercase
+                h2 Unisex<br/>Collection
+                span.shoes-collection__button.brands-section__button.slider-text__button.btn.font-size-s view all
+          
+          div.shoes-collection__item
+            a(href="#")
+              img.shoes-collection__img(src="http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/custom_showcase3_img.jpg?237503522928280807")
+              div.shoes-collection__text.text-uppercase
+                h2 Women's<br/>Collection
+                span.shoes-collection__button.brands-section__button.slider-text__button.btn.font-size-s view all
+          
+          div.shoes-collection__item
+            a(href="#")
+              img.shoes-collection__img(src="http://cdn.shopify.com/s/files/1/1774/5405/t/2/assets/custom_showcase4_img.jpg?237503522928280807")
+              div.shoes-collection__text.text-uppercase
+                h2 Lifestyle<br/>Collection
+                span.shoes-collection__button.brands-section__button.slider-text__button.btn.font-size-s view all
+
+    section.subscribe.parallax
+      div.container
+        div.row
+          div.col-lg-6.col-md-12
+            h2.subscribe__title.slider-text__title.slider-text__title--h3 Newsletter
+            p.subscribe__text.slider-text__text Subscribe to the Hamintec mailing list to receive updates on new arrivals, special offers and other discount information.
+          div.col-lg-6.col-md-12
+            form.feedback-form
+              div.feedback-form__form-group
+                input.feedback-form__input(placeholder="Enter e-mail")
+                button.feedback-form__button.slider-text__button.btn.font-size-s subscribe
+
+    div.footer.parallax.parallax--footer
+      div.container
+        div.row
+          div.col-lg-3.col-sm-4.col-12
+            div.menu-bottom.footer__menu-bottom
+              h2.menu-bottom__title INFORMATION
+              ul.menu
+                each val in ["HOME", "SEARCH", "BLOG", "COLLECTIONS", "ABOUT US", "CONTACT US", "WISHLIST", "SITEMAP"]
+                  li.menu__item
+                    a.menu__link.menu__link--color-white-blue.font-size-m.text-uppercase(href="#")= val
+          
+          div.col-lg-3.col-sm-4.col-12
+            div.menu-bottom.footer__menu-bottom
+              h2.menu-bottom__title CATEGORIES
+              ul.menu
+                each val in ["BEST SELLERS", "BOYS", "GIRLS", "LIFESTYLE COLLECTION", "NEW ARRIVALS", "AEROBICS", "ATHLETICS", "BADMINTON"]
+                  li.menu__item
+                    a.menu__link.menu__link--color-white-blue.font-size-m.text-uppercase(href="#")= val
+
+          div.col-lg-3.col-sm-4.col-12
+            div.menu-bottom.footer__menu-bottom
+              h2.menu-bottom__title MY ACCOUNT
+              ul.menu
+                each val in ["MY ACCOUNT", "MY ADDRESSES", "MY CART"]
+                  li.menu__item
+                    a.menu__link.menu__link--color-white-blue.font-size-m.text-uppercase(href="#")= val
+          
+          div.col-lg-3.col-12
+            div.menu-bottom.contacts.footer__menu-bottom
+              h2.menu-bottom__title STORE INFORMATION
+              ul.menu
+                li.menu__item.contacts__line.menu--size-l
+                  i.fa.fa-map-marker.menu__icon(aria-hidden="true")
+                  a.menu__link.menu__link--color-white-blue.text-uppercase(href="#") MY COMPANY, 4578 MARMORA ROAD, GLASGOW D04 89GR
+                li.menu__item.contacts__line.menu--size-l
+                  i.fa.fa-phone.menu__icon(aria-hidden="true")
+                  a.menu__link.menu__link--color-white-blue.text-uppercase(href="#") CALL US TOLL FREE: 0123-456-789
+                li.menu__item.contacts__line.menu--size-l
+                  i.fa.fa-envelope.menu__icon(aria-hidden="true")
+                  a.menu__link.menu__link--color-white-blue.text-uppercase(href="#") INFO@DEMOLINK.ORG
+
+      
+      div.footer__bottom
+        div.container
+          div.row
+            div.col-md-6.col-12
+              div.logo
+                a
+                  img(src="//cdn.shopify.com/s/files/1/1774/5405/t/2/assets/footer_logo.png?686788137492996697")
+            div.col-md-6.col-12
+              div.copyright.text-right
+                p &copy; 2017 Hamintec. All rights reserved. 
+  script(src='js/hamintec.js')
+
+

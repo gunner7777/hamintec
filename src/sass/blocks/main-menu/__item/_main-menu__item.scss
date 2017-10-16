@@ -1,0 +1,42 @@
+.main-menu__item {
+  padding: 0 20px;
+}
+
+@media all and (max-width: 1356px) {
+  .main-menu__item {
+    padding: 0 15px;  
+  }
+}
+
+@media all and (max-width: 1236px) {
+  .main-menu__item {
+    padding: 0 10px;  
+  }
+}
+
+@media all and (max-width: 1056px) {
+  .main-menu__item {
+    padding: 0 7px;  
+  }
+}
+
+@media all and (max-width: 991px) {
+  .main-menu__item {
+    text-align: left;
+    padding: 5px 30px;
+    
+    &:not(:last-child) {
+      @include border-bottom(1px);
+    }
+
+    .menu_link {
+      color: $grey;
+    }
+  }
+}
+
+@media all and (max-width: 260px) {
+  .main-menu__item {
+    padding: 5px 15px;
+  }
+}

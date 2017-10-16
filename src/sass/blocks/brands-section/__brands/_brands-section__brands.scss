@@ -1,0 +1,18 @@
+.brands-section__brands {
+  position: absolute;
+  top: 130px;
+  text-align: center;
+  min-width: 240px;
+}
+
+@media all and (max-width: 1199px) {
+  .brands-section__brands {
+    top: 36px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .brands-section__brands {
+    top: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.main-menu__toggle {
+  display: none;
+}
+
+@media all and (max-width: 991px) {
+  .main-menu__toggle {
+    display: block;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 11px;
+    right: 5px;
+    font-size: 1rem;
+    color: $white;
+    padding: 2px;
+    border-radius: 100%;
+    background-color: $grey;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+  }
+}

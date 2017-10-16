@@ -1,0 +1,12 @@
+@media all and (max-width: 991px) {
+  .header-center__order--last {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+
+    & > div {
+      position: relative;
+    }
+  }
+}  

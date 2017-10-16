@@ -1,0 +1,23 @@
+.main-menu__mobile {
+  display: none;
+  background-color: #313041;
+  color: $white;
+  font-style: italic;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 72px;
+  padding: 0 30px;
+  margin-top: 15px;
+}
+
+@media all and (max-width: 991px) {
+  .main-menu__mobile {
+    display: block;
+  }
+}
+
+@media all and (max-width: 260px) {
+  .main-menu__mobile {
+    padding: 0 17px;
+  }
+}

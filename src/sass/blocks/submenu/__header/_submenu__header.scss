@@ -1,0 +1,23 @@
+.submenu__header {
+  color: $blue;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 991px) {
+  .submenu__header {
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    color: $grey;
+    margin: 0;
+    padding: 8px 0 12px 10px;
+    border-top: 1px solid $light_grey;
+    position: relative;
+
+    & + ul li a {
+      padding-left: 20px;
+    }
+  }
+}

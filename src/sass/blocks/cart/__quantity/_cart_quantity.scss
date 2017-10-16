@@ -1,0 +1,10 @@
+.cart__quantity {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  color: $white;
+  background-color: $blue;
+  border-radius: 100%;
+  padding: 2px 9px;
+  cursor: pointer;
+}

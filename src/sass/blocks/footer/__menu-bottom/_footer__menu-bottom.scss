@@ -1,0 +1,16 @@
+.footer__menu-bottom {
+  margin-top: 80px;
+}
+
+@media all and (max-width: 991px) {
+  .footer__menu-bottom {
+    margin-top: 40px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .footer__menu-bottom {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}

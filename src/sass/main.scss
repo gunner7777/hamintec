@@ -1,0 +1,44 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+@import './mixins/mixins';
+@import 'colors';
+@import 'variables';
+@import 'text';
+@import './blocks/wrapper/wrapper';
+@import './blocks/header-top/header-top';
+@import './blocks/top-menu/top-menu';
+@import './blocks/header-center/header-center';
+@import './blocks/menu/menu';
+@import './blocks/logo/logo';
+@import './blocks/cart/cart';
+@import './blocks/popup-currency/popup-currency';
+@import './blocks/select/select';
+@import './blocks/search-form/search-form';
+@import './blocks/main-menu/main-menu';
+@import './blocks/submenu/submenu';
+@import './blocks/submenu-wrapper/submenu-wrapper';
+@import './blocks/slider/slider';
+@import './blocks/slider-caption/slider-caption';
+@import './blocks/slider-text/slider-text';
+@import './blocks/brands-section/brands-section';
+@import './blocks/brands/brands';
+@import './blocks/shoes-collection/shoes-collection';
+@import './blocks/subscribe/subscribe';
+@import './blocks/feedback-form/feedback-form';
+@import './blocks/footer/footer';
+@import './blocks/menu-bottom/menu-bottom';
+@import './blocks/contacts/contacts';
+@import './blocks/copyright/copyright';

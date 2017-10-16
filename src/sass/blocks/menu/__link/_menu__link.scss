@@ -1,0 +1,14 @@
+.menu__link {
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+@media all and (max-width: 991px) {
+  .menu__link {
+    padding: 7px 0;
+    display: block;
+    position: relative;
+    color: $grey !important;
+  }
+}

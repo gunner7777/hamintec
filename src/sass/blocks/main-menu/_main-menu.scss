@@ -1,0 +1,29 @@
+@media all and (max-width: 991px) {
+  .main-menu {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: $white;
+    position: absolute;
+    z-index: 21;
+    width: 100%;
+    max-height: 0;
+    font-weight: 400;
+    -webkit-transition: max-height ease .5s;
+    -o-transition: max-height ease .5s;
+    transition: max-height ease .5s;
+    -webkit-box-shadow: 0 0 11px 1px rgba(0,0,0,.18);
+            box-shadow: 0 0 11px 1px rgba(0,0,0,.18);
+  }
+}
+
+.open-menu {
+    display: block;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+@import '__submenu-wrapper/main-menu__submenu-wrapper';
+@import '__item/main-menu__item';
+@import '__mobile/main-menu__mobile';
+@import '__toggle/main-menu__toggle';
+@import '__toggle/main-menu__toggle--main';

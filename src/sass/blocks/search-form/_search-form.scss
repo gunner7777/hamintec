@@ -1,0 +1,31 @@
+.search-form {
+  position: relative;
+  @include border(2px);
+  width: 100%;
+
+  &::before {
+    content: "\f002";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    line-height: 55px;
+    font-size: 28px;
+    width: 54px;
+    text-align: center;
+    color: #313041;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .search-form {
+    &::before {
+      font-size: 24px;
+      width: 40px;
+    }
+  }
+}
+
+@import '__item/search-form__input';
+@import 'search-form--border-radius-true';

@@ -1,0 +1,21 @@
+.header-top__socials {
+  @include border-bottom(2px);
+
+  & > li {
+    padding: 0 8px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .header-top__socials {
+    border-left: none !important;
+  }
+}
+
+@media all and (max-width: 233px) {
+  .header-top__socials {
+    & > li {
+      padding: 0 6px;
+    }
+  }
+}
